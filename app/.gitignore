@@ -1,1 +1,8 @@
 /build
+.idea/
+local.properties
+.gradle/
+*.iml
+atlassian-ide-plugin.xml
+.DS_Store
+/captures
