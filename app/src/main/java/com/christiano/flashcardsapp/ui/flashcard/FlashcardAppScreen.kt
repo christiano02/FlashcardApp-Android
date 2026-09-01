@@ -26,7 +26,7 @@ fun FlashcardAppScreen(
 
     Scaffold(
         topBar = {
-            TopAppBar(
+            CenterAlignedTopAppBar(
                 title = {
                     Text(
                         text = "Music FlashCards",
