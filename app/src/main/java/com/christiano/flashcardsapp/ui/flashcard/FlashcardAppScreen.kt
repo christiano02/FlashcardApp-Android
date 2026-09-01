@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -66,8 +67,8 @@ fun FlashcardAppScreen(
             Button(
                 onClick = { viewModel.aoClicarNobotao() },
                 modifier = Modifier
-                    .fillMaxSize()
-                    .height(56.dp)
+                    .height(48.dp),
+                shape = RoundedCornerShape(8.dp)
             ) {
                 Text(
                     text = if (state.estaVirado) "Proximo Cartão" else "Revelar Tradução",
